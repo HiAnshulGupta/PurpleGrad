@@ -1,0 +1,32 @@
+package com.app.model;
+
+import javax.persistence.Column;
+
+public class RegisterDTO {
+	
+	
+	private String firstName;
+
+	
+	private String LastName;
+
+	
+	private String MobileNumber;
+
+	
+	private String Email;
+
+	
+	private String Passowrd;
+
+	@Column(name = "age")
+	private int Age;
+
+	@Column(name = "gender")
+	private String Gender;
+
+	
+	private String address;
+
+
+}

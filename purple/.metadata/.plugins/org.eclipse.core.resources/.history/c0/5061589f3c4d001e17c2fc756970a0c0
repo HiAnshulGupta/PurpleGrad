@@ -1,0 +1,17 @@
+package com.example.app.model;
+
+import javax.persistence.Id;
+
+public class BaseCLass {
+
+	@Id()
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	
+	
+	
+}

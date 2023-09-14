@@ -1,0 +1,42 @@
+package com.app.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.validation.constraints.Email;
+
+import org.hibernate.annotations.Columns;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class RegistrationForm extends BaseCLass{
+	@Column
+	private String firstName;
+	@Column
+	private String LastName;
+	@Column
+	private String MobileNumber;
+	@Column
+	private Email email;
+	@Column
+	private String Passowrd;
+	@Column
+	private int Age;
+	@Column
+	private String Gender;
+	@Column
+	private String address;
+	
+	
+	
+
+}

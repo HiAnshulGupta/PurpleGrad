@@ -1,0 +1,26 @@
+package com.app.controller.copy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.Repository.StudentRepo;
+import com.app.model.Register;
+
+@RestController
+@RequestMapping("/Student")
+public class StudentController {
+	
+	@Autowired
+	private StudentRepo strepo;
+	
+	@PostMapping("/register")
+	public Register insert(@RequestBody Register reg) {
+		
+		return strepo.save(reg);
+	}
+	
+
+}

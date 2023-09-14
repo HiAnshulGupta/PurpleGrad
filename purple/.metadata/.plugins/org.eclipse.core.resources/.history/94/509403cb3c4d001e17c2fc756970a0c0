@@ -1,0 +1,25 @@
+package com.app.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.validation.constraints.Email;
+
+import com.example.app.model.BaseCLass;
+
+@Entity
+@Table
+public class RegistrationForm extends BaseCLass{
+	
+	private String firstName;
+	private String LastName;
+	private String MobileNumber;
+	private Email email;
+	private String Passowrd;
+	private int Age;
+	private String Gender;
+	private String address;
+	
+	
+	
+
+}

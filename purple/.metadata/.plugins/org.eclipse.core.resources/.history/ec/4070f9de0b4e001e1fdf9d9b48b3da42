@@ -1,0 +1,25 @@
+package com.example.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.app.model.RegistrationForm;
+import com.app.repository.RegisterRepository;
+
+@Transactional
+@Service
+public class registerServiceIMPL implements registerService {
+
+	@Autowired
+	private RegisterRepository regis;
+	
+	@Override
+	public RegistrationForm adduser(RegistrationForm rto) {
+		// TODO Auto-generated method stub
+		
+		return regis.save(rto);
+	}
+
+}

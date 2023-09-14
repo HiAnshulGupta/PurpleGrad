@@ -1,0 +1,9 @@
+package com.example.service;
+
+import com.app.model.RegistrationForm;
+
+public interface registerService {
+
+	RegistrationForm adduser(RegistrationForm rto);
+	
+}

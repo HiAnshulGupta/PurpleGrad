@@ -1,0 +1,5 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/pupleregform;
+spring.datasource.username=postgres
+spring.datasource.password=welcome@123
+
+spring.jpa.hibernate.ddl-auto=update
